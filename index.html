@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DreamRunner Agent</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(145deg, #0a0a0a, #1c1c1c);
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .logo {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #111;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0,255,255,0.1);
+        }
+        h1 {
+            color: #00ffff;
+            text-align: center;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .feature {
+            background: #222;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .btn {
+            background: #00ffff;
+            color: #000;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 30px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        code {
+            display: block;
+            background: #000;
+            color: #0ff;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 13px;
+            border-radius: 10px;
+            white-space: pre-wrap;
+        }
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="dreamrunner_logo.png" alt="DreamRunner Logo" class="logo">
+    <div class="card">
+        <h1>DreamRunner — Emotional AI Agent</h1>
+        <p>DreamRunner helps users reflect, express, and evolve through music, voice, and emotional analytics. Part of the PlayAI.fm initiative, DreamRunner is ready for the open agentic web.</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>/reflect_week</h3>
+                <p>Weekly emotional graph + voice summary</p>
+            </div>
+            <div class="feature">
+                <h3>/play_my_emotions</h3>
+                <p>Generate playlists based on your feelings</p>
+            </div>
+            <div class="feature">
+                <h3>/shopai</h3>
+                <p>AI shopping assistant based on mood</p>
+            </div>
+        </div>
+
+        <a href="https://t.me/PlayAI_fm_bot" class="btn">Launch in Telegram</a>
+
+        <code>{
+  "name": "DreamRunner",
+  "api": {
+    "type": "webhook",
+    "url": "https://t.me/PlayAI_fm_bot"
+  },
+  "commands": [
+    {"name": "/reflect_week", "description": "Weekly emotional graph"},
+    {"name": "/play_my_emotions", "description": "Mood-based playlist"},
+    {"name": "/shopai", "description": "Emotion-aware shopping"}
+  ]
+}</code>
+    </div>
+</body>
+</html>
