@@ -1,111 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DreamRunner Agent</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(145deg, #0a0a0a, #1c1c1c);
-            color: #eee;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-        }
-        .logo {
-            width: 160px;
-            margin-bottom: 20px;
-        }
-        .card {
-            background: #111;
-            border-radius: 20px;
-            padding: 30px;
-            max-width: 800px;
-            box-shadow: 0 0 20px rgba(0,255,255,0.1);
-        }
-        h1 {
-            color: #00ffff;
-            text-align: center;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .feature {
-            background: #222;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-        }
-        .btn {
-            background: #00ffff;
-            color: #000;
-            padding: 15px 25px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            margin-top: 30px;
-            text-decoration: none;
-            display: inline-block;
-        }
-        code {
-            display: block;
-            background: #000;
-            color: #0ff;
-            padding: 15px;
-            margin-top: 20px;
-            font-size: 13px;
-            border-radius: 10px;
-            white-space: pre-wrap;
-        }
-        @media (max-width: 768px) {
-            .features {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>DreamRunner — Emotional AI Agent</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; padding: 40px; max-width: 800px; margin: auto; }
+    h1 { color: #0ff; }
+    h2 { color: #67e8f9; margin-top: 40px; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .qr { margin-top: 20px; text-align: center; }
+    .qr img { width: 160px; border-radius: 16px; box-shadow: 0 0 12px rgba(0,255,255,0.3); }
+    ul { padding-left: 20px; }
+    .pitch {
+      margin-top: 40px;
+      padding: 20px;
+      background: #1e293b;
+      border-left: 4px solid #0ff;
+    }
+  </style>
 </head>
 <body>
-    <img src="dreamrunner_logo.png" alt="DreamRunner Logo" class="logo">
-    <div class="card">
-        <h1>DreamRunner — Emotional AI Agent</h1>
-        <p>DreamRunner helps users reflect, express, and evolve through music, voice, and emotional analytics. Part of the PlayAI.fm initiative, DreamRunner is ready for the open agentic web.</p>
+  <h1>🌀 DreamRunner — Emotional AI Agent</h1>
+  <p><em>DreamRunner is a voice-first emotional AI companion that helps users reflect on their emotional states, receive mood-based music, and interact with a human-like assistant in real time. Built with GPT-4 and integrated via Telegram, GitHub, and the Open Agentic Web vision from Microsoft.</em></p>
 
-        <div class="features">
-            <div class="feature">
-                <h3>/reflect_week</h3>
-                <p>Weekly emotional graph + voice summary</p>
-            </div>
-            <div class="feature">
-                <h3>/play_my_emotions</h3>
-                <p>Generate playlists based on your feelings</p>
-            </div>
-            <div class="feature">
-                <h3>/shopai</h3>
-                <p>AI shopping assistant based on mood</p>
-            </div>
-        </div>
+  <div class="pitch">
+    <h2>🎤 Pitch Slide</h2>
+    <p><strong>Problem:</strong> People struggle to track and express emotions in daily life.<br>
+    <strong>Solution:</strong> DreamRunner uses AI and voice to help users reflect emotionally, generate music from feelings, and receive empathic support.<br>
+    <strong>Market:</strong> Voice wellness, ambient coaching, AI therapy tools.<br>
+    <strong>Technology:</strong> GPT-4, Telegram Bot API, Music & Mood Matching, TTS.<br>
+    <strong>Vision:</strong> Part of the Open Agentic Web, designed for daily AI companionship with emotional depth.</p>
+  </div>
 
-        <a href="https://t.me/PlayAI_fm_bot" class="btn">Launch in Telegram</a>
+  <h2>📎 Key Links</h2>
+  <ul>
+    <li>🌐 Website: <a href="https://dreamrunner.playai.fm">dreamrunner.playai.fm</a></li>
+    <li>🚀 Telegram: <a href="https://t.me/PlayAI_fm_bot">@PlayAI_fm_bot</a></li>
+    <li>💻 GitHub: <a href="https://github.com/Yevhenii1313Ilin/dreamrunner-agent-site">dreamrunner-agent-site</a></li>
+    <li>📄 PDF Card: <a href="https://dreamrunner.playai.fm/DreamRunner_Agent_Card.pdf">Download</a></li>
+  </ul>
 
-        <code>{
-  "name": "DreamRunner",
-  "api": {
-    "type": "webhook",
-    "url": "https://t.me/PlayAI_fm_bot"
-  },
-  "commands": [
-    {"name": "/reflect_week", "description": "Weekly emotional graph"},
-    {"name": "/play_my_emotions", "description": "Mood-based playlist"},
-    {"name": "/shopai", "description": "Emotion-aware shopping"}
-  ]
-}</code>
-    </div>
+  <div class="qr">
+    <h2>📷 QR Code</h2>
+    <img src="dreamrunner_qr.png" alt="DreamRunner QR">
+  </div>
+
+  <h2>🔍 Description</h2>
+  <p>DreamRunner is a modular AI agent that provides emotional reflection and voice interaction. Users can track emotions, generate mood-based music, and get AI-powered voice feedback.</p>
+  <ul>
+    <li><code>/reflect_week</code> – voice summary of your weekly mood</li>
+    <li><code>/play_my_emotions</code> – music recommendations by feeling</li>
+    <li><code>/shopai</code> – emotion-based product discovery</li>
+  </ul>
+
+  <h2>🔧 Use Cases</h2>
+  <ul>
+    <li>Mental wellness and mood tracking</li>
+    <li>Voice-based coaching and AI companionship</li>
+    <li>Emotion-aware content and shopping experiences</li>
+  </ul>
+
+  <h2>👤 Contributors</h2>
+  <ul>
+    <li><strong>Yevhenii Ilin</strong> – Founder, Architect, Voice of DreamRunner</li>
+    <li><strong>GPT-4</strong> – AI-assisted development and testing partner</li>
+    <li><strong>PlayAI.fm Bot</strong> – Real-time emotional interface via Telegram</li>
+  </ul>
+
+  <h2>📥 Contact</h2>
+  <p>Email: <a href="mailto:founder@playai.fm">founder@playai.fm</a></p>
 </body>
 </html>
